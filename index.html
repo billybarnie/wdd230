@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta description="WDD 230 - Web Frontend Development, Ian William Barnie, Course Assignment Portal">
     <meta author="Billy Barnie">
+    <link rel="stylesheet" href="styles/base.css">
     <title>Ian Barnie - WDD 230 - Frontend Web Development</title>
 </head>
 <body>
     <header>
         <h1>Ian W. Barnie</h1>
-        <img class="profile-picture" src="images/" alt="Picture of the student">
+        <img class="profile-picture" src="images/IanBarnie.JPG" alt="Picture of the student">
     </header>
     <nav>
         <a href="#" target="_blank">Home</a>
@@ -25,7 +26,7 @@
             <h3>Learning Activities</h3>
             <ul>
                 <li>
-                    <a href="layout" target="_blank">layout</a><a href="JSpen" target="_blank">JSpen</a>
+                    <a href="layout" target="_blank">layout</a> | <a href="JSpen" target="_blank">JSpen</a>
                 </li>
             </ul>
         </section>
@@ -34,7 +35,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; </p>
+        <p>&copy; <span id="year"></span> | Billy Barnie | Texas</p>
+        <p>Last Moditication: <span id="lastmodified"></span></p>
     </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>
