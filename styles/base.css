@@ -61,6 +61,7 @@ main {
     border-radius: 5px;
     padding: 15px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .card ul {
@@ -70,12 +71,12 @@ main {
 
 .card a {
     text-decoration: none;
-    color: #007BFF;
+    color: #000000;
     transition: color 0.3s ease;
 }
 
 .card a:hover {
-    color: #0056b3;
+    color: #007BFF;
 }
 
 footer {
