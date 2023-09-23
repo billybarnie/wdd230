@@ -1,0 +1,17 @@
+@media screen and (max-width: 500px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    header, footer {
+        padding: 10px;
+    }
+
+    .card h3 {
+        padding: 10px;
+    }
+}

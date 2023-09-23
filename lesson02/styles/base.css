@@ -1,0 +1,58 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    column-gap: .5rem;
+}
+
+header, footer {
+    text-align: center;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    border: 2px solid lightgray;
+    border-radius: 10px 10px 0 0;
+    margin: 20px;
+    padding-top: 0;
+    background-color: lightgrey;
+    background-size: cover;
+}
+
+.card h3 {
+    background-color: grey;
+    color: white;
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: left;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h4 {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    
+}
