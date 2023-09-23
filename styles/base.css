@@ -28,6 +28,7 @@ nav {
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 }
 
 nav a {
@@ -93,3 +94,4 @@ footer {
 .card li {
     padding: .5rem;
 }
+
