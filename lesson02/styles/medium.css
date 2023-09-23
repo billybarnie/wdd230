@@ -1,15 +1,19 @@
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 501px) and (max-width: 825px) {
+    body {
+        margin: 0 auto;
+        max-width: 600px;
+        align-items: center;
+    }
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 10px;
-        justify-content: center;
-        padding: 10px;
     }
 
     .card {
         width: 100%;
+        font-size: larger;
     }
 
     .card:nth-child(3) {
@@ -21,5 +25,9 @@
     .card p,
     a {
         font-size: 16px;
+    }
+
+    header, footer {
+        width: 100%;
     }
 }

@@ -25,6 +25,7 @@ header, footer {
     padding-top: 0;
     background-color: lightgrey;
     background-size: cover;
+    font-size: larger;
 }
 
 .card h3 {
