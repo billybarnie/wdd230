@@ -30,4 +30,8 @@
     header, footer {
         width: 100%;
     }
+
+    .card p {
+        padding: 10px;
+    }
 }

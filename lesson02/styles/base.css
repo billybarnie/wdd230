@@ -1,6 +1,7 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Oswald', sans-serif;
 }
 
 main {
@@ -56,4 +57,8 @@ a {
     padding-left: 20px;
     padding-bottom: 10px;
     
+}
+
+.card p {
+    padding: 10px;
 }
