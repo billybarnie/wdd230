@@ -23,7 +23,6 @@ header h1 {
 }
 
 nav {
-    display: flex;
     justify-content: center;
     background-color: #212121;
     text-align: center;
@@ -34,7 +33,7 @@ nav {
 .navigation li a {
     display: block;
     flex: 1 1 100%;
-    list-style: none;
+    list-style-type: none;
     text-decoration: none;
     color: #fff;
     margin: 10px 0;
@@ -43,7 +42,7 @@ nav {
 }
 
 .navigation {
-    flex-direction: row;
+    flex-direction: row!important;
 }
 
 nav li a:hover {
