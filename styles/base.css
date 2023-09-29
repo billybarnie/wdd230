@@ -42,7 +42,7 @@ nav {
 }
 
 .navigation {
-    flex-direction: row!important;
+    flex-direction: row;
 }
 
 nav li a:hover {
