@@ -23,6 +23,7 @@ header h1 {
 }
 
 nav {
+
     justify-content: center;
     background-color: #212121;
     text-align: center;
@@ -42,6 +43,7 @@ nav {
 }
 
 .navigation {
+    display: flex;
     flex-direction: row;
 }
 
