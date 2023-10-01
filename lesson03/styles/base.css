@@ -1,6 +1,95 @@
+:root {
+    --primary-color: #780000;
+    --secondary-color: #FDF0D5;
+    --accent1-color: #FFBCC1;
+}
+.primary {
+    background-color: var(--primary-color);
+}
+.secondary {
+    background-color: var(--secondary-color);
+}
+.accent1 {
+    background-color: var(--accent1-color);
+}
+.colors {
+    justify-content: center;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+.colors th {
+    background-color: #999;
+
+}
+.colors td{
+    width: 25%;
+    height: 3em;
+}
+
 body h1, body h2 {
     font-family: 'Oswald', sans-serif;
 }
 body p {
     font-family: 'Bitter', serif;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    width: 1200px;
+}
+
+header {
+    background-color: #FDF0D5;
+    color: #780000;
+    text-align: center;
+    padding: 20px;
+    display: border;
+    border-radius: 10px;
+}
+#menu {
+    display: none;
+}
+
+nav {
+    background-color: #780000;
+    text-align: center;
+    margin-top: -15px;
+}
+
+.navigation li a {
+    display: block;
+    flex: 1 1 100%;
+    text-decoration: none;
+    background-color: #780000;
+    color: #FDF0D5;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.navigation {
+    justify-content: center;
+    display: flex;
+    margin-right: 30px;
+    list-style-type: none;
+    flex-direction: row;
+
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 188, 193, 1);
+}
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(255, 188, 193, 1);
+    margin-bottom: 20px;
 }
