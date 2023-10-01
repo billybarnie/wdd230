@@ -37,7 +37,7 @@ body p {
 body {
     text-align: center;
     margin: auto;
-    width: 1200px;
+    width: 100%;
 }
 
 header {
