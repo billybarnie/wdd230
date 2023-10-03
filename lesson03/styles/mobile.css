@@ -94,5 +94,11 @@
         padding: 0;
         text-align: center;
         align-items: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
     }
+
 }
