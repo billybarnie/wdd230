@@ -11,6 +11,10 @@
         height: 45px;
     }
 
+    main {
+        margin-left: 1em;
+    }
+
     #menu {
         display: block;
         font-size: 1.5rem;
