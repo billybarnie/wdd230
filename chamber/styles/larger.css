@@ -67,11 +67,6 @@
         display: block;
     }
 
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-
     .events {
         grid-row: 1/2;
         grid-column: 1/4;
@@ -100,7 +95,6 @@
     }
 
     .spotlight ul {
-        height: 825px;
         row-gap: 20px;
         display: flex;
         flex-direction: column;
