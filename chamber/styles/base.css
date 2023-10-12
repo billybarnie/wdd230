@@ -16,6 +16,9 @@ header {
     left: 0;
     width: 100%;
     padding: .5em 2em;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
 header span {
@@ -68,14 +71,14 @@ main {
     column-gap: 20px;
 }
 
-img {
-    margin-top: 190px;
-    position: static;
+.logo {
+    float: right;
+    padding-right: 50px;
+    height: 150px;
+}
+
+.hero {
     width: 100%;
-    margin-left: 0.5em;
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
 }
 
 main section {

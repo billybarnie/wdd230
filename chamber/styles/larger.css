@@ -6,13 +6,28 @@
         align-items: center;
     }
 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     nav {
         margin: 0;
         height: 45px;
     }
 
+    .logo {
+        height: 125px;
+        float: right;
+    }
+
     main {
         margin-left: 1em;
+        margin-top: 13em;
+    }
+
+    .hero {
+        display: none;
     }
 
     #menu {
