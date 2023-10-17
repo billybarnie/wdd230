@@ -81,19 +81,31 @@ main {
     width: 100%;
 }
 
-main section {
-    background-color: white;
+main section { 
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(253, 240, 213, 1);
+    
+}
+
+.sectionLight {
+    background-color: white;
     color: #780000;
 }
 
-.events ul li, .weather ul li, .spotlight ul li {
+.sectionDark {
+    background-color: black;
+    color: white;
+}
+
+main section ul li {
     height: 300px;
     border-radius: 10px;
-    background-color: lightgray;
-    
+    /*background-color: lightgray;*/
 }
+
+/*main section ul li .dark {
+    background-color: darkgrey;
+}*/
 
 .spotlight ul li {
     height: auto;
@@ -169,4 +181,14 @@ footer {
 	right: 1rem;
 	font-size: 2rem;
 	cursor: pointer;
+}
+
+.light {
+    background-color: #FFBCC1;
+    color: #780000;
+}
+
+.dark {
+    background-color: black;
+    color: white;
 }
