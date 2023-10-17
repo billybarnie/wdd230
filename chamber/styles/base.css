@@ -92,6 +92,11 @@ main section {
     height: 300px;
     border-radius: 10px;
     background-color: lightgray;
+    
+}
+
+.spotlight ul li {
+    height: auto;
 }
 
 .events {
@@ -107,6 +112,14 @@ main section {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     padding: 0 20px;
+}
+
+.events ul li p, .spotlight ul li p {
+    padding: 2em;
+}
+
+.events h3, .spotlight h3 {
+    padding-top: 2em;
 }
 
 .weather {
@@ -136,9 +149,11 @@ main section {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     padding: 0 20px;
-    
 }
 
+.numbers {
+    padding: 2em;
+}
 footer {
     text-align: center;
     margin-top: auto;
@@ -146,4 +161,12 @@ footer {
     color: #fff;
     padding: 10px;
     width: 100%;
+}
+
+#mode {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	font-size: 2rem;
+	cursor: pointer;
 }
