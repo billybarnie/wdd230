@@ -71,7 +71,7 @@ nav {
 }
 
 main {
-    max-width: 100%;
+    width: 100%;
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -79,6 +79,7 @@ main {
     text-align: center;
     row-gap: 20px;
     column-gap: 20px;
+    
 }
 
 .logo {
@@ -108,7 +109,7 @@ main section {
 }
 
 main section ul li {
-    height: 300px;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -157,7 +158,7 @@ main section ul li {
     text-align: center;
     grid-row: 2/3;
     grid-column: 1/4;
-    height: auto; /* will be set to auto later */
+    height: auto;
 }
 
 .spotlight ul {
@@ -182,7 +183,7 @@ footer {
 
 #mode {
 	position: absolute;
-	top: 0;
+	top: .25em;
 	right: 1rem;
 	font-size: 2rem;
 	cursor: pointer;
