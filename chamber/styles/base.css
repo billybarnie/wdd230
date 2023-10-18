@@ -1,10 +1,14 @@
-body {
+body.light {
     width: 100%;
     margin: auto;
     position: relative;
     margin: 0;
     min-height: 100%;
     background-color: #FFBCC1;
+}
+
+body.dark {
+    background-color: black;
 }
 
 header {
@@ -28,7 +32,13 @@ header span {
 header h1 {
     font-size: 3rem;
 }
-
+h2.light {
+    background-color: white;
+}
+h2.dark {
+    background-color: white;
+    color: black;
+}
 nav {
     background-color: #780000;
     text-align: center;
@@ -100,12 +110,7 @@ main section {
 main section ul li {
     height: 300px;
     border-radius: 10px;
-    /*background-color: lightgray;*/
 }
-
-/*main section ul li .dark {
-    background-color: darkgrey;
-}*/
 
 .spotlight ul li {
     height: auto;
@@ -152,7 +157,7 @@ main section ul li {
     text-align: center;
     grid-row: 2/3;
     grid-column: 1/4;
-    height: 500px; /* will be set to auto later */
+    height: auto; /* will be set to auto later */
 }
 
 .spotlight ul {
@@ -184,11 +189,15 @@ footer {
 }
 
 .light {
-    background-color: #FFBCC1;
+    background-color: lightgrey;
     color: #780000;
 }
 
 .dark {
-    background-color: black;
-    color: white;
+    background-color: darkgrey;
+    color: black;
+}
+
+.website {
+    padding: 2em;
 }
