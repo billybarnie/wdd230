@@ -1,9 +1,10 @@
 @media only screen and (min-width: 1px) and (max-width: 500px) {
 
     body {
-        margin: 0 auto;
+        padding-top: 20px;
         max-width: 100%;
         align-items: center;
+        margin-left: .6em;
     }
 
     header {
@@ -23,11 +24,6 @@
 
     main {
         margin-left: .6em;
-        margin-top: 13em;
-    }
-
-    .hero {
-        display: none;
     }
 
     #menu {
@@ -117,5 +113,9 @@
         row-gap: 20px;
         display: flex;
         flex-direction: column;
+    }
+
+    .hero {
+       padding-left: 1em;
     }
 }
