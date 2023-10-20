@@ -1,10 +1,14 @@
+html {
+    width: 100%;
+}
+
 body.light {
     width: 100%;
     margin: auto;
     position: relative;
     margin: 0;
-    min-height: 100%;
     background-color: #FFBCC1;
+    margin-top: 10em;
 }
 
 body.dark {
@@ -88,8 +92,9 @@ main {
     height: 150px;
 }
 
-.hero {
+.hero img {
     width: 100%;
+    height: auto;
 }
 
 main section { 

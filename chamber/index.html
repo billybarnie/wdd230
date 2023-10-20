@@ -20,8 +20,13 @@
         <h1>Irving <br><span>Chamber Of Commerce</span></h1> 
         <img class="logo" src="images/chamber_logo.png" alt="Chamber of commerce logo">
     </header>
-    
-    <img class="hero" src="images/irving_hero.jpeg" alt="Hero image">
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="images/hero_image_medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero_image.jpeg" alt="hero-image">
+        </picture>
+    </div>
     <nav>
         <button id="menu"></button>
         <ul class="navigate">
