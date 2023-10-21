@@ -167,6 +167,10 @@ main section ul li {
     padding: 0 20px;
 }
 
+.weather ul li p {
+    padding: 1.3em;
+
+}
 .spotlight {
     justify-content: center;
     text-align: center;
