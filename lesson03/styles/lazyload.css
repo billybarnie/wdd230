@@ -1,0 +1,33 @@
+header {
+    text-align: center;
+    background-color: blue;
+    padding: 2em;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main img {
+    grid-column: 2/3;
+    padding: 1em;
+    animation: fade 15s;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    padding: 2em;
+    text-align: center;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
