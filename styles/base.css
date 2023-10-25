@@ -128,3 +128,62 @@ iframe {
     display: grid;
     place-items: center;
 }
+
+.hero {
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero-overlay:hover {
+    opacity: 1;
+}
+
+.hero-overlay h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 16px;
+}
+
+.saint-map {
+    color: white;
+    text-decoration: none;
+}
+
+.saint-map:link {
+    color: white;
+}
+
+.saint-map:visited {
+    color: #4aa1ff;
+    text-decoration: none;
+}
+
+.saint-map:hover {
+    color: #007BFF;
+}
+
+.saint-map:active {
+    color: darkgray;
+}
+
+
+

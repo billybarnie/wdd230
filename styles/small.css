@@ -67,4 +67,8 @@
     .active::before {
         content: "📍 ";
     }
+
+    .hero-overlay {
+        height: 93%;
+    }
 }
