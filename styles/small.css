@@ -75,27 +75,4 @@
     .hero img {
         width: 100%;
     }
-
-    .saint-map {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .saint-map:link {
-        color: white;
-    }
-    
-    .saint-map:visited {
-        color: #4aa1ff;
-        text-decoration: none;
-    }
-    
-    .saint-map:hover {
-        color: #007BFF;
-    }
-    
-    .saint-map:active {
-        color: darkgray;
-    }
-    
 }
