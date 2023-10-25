@@ -16,10 +16,10 @@
     #menu {
         display: block;
         font-size: 1.5rem;
-        border: 1px solid rgba(0,0,0,.3);
+        border: none;
         padding: .25rem .75rem;
-        background-color: #eee;
-        color: #000;
+        background-color: #333;
+        color: white;
         position: absolute;
         top: 1rem;
         right: 1rem;
@@ -71,4 +71,31 @@
     .hero-overlay {
         height: 93%;
     }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .saint-map {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .saint-map:link {
+        color: white;
+    }
+    
+    .saint-map:visited {
+        color: #4aa1ff;
+        text-decoration: none;
+    }
+    
+    .saint-map:hover {
+        color: #007BFF;
+    }
+    
+    .saint-map:active {
+        color: darkgray;
+    }
+    
 }
