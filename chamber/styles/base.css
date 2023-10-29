@@ -190,6 +190,7 @@ main section ul li {
 .numbers {
     padding: 2em;
 }
+
 footer {
     text-align: center;
     margin-top: auto;
@@ -245,5 +246,5 @@ footer {
 }
 
 .sidebar {
-    grid-row: 1/2;
+    margin-bottom: auto;
 }
