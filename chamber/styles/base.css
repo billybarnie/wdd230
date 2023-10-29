@@ -220,3 +220,30 @@ footer {
 .website {
     padding: 2em;
 }
+
+.sidebar, .images {
+    grid-column: 1/2;
+    width: 100%;
+    background-color: white;
+}
+
+.sidebar ul, .images ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.images {
+    grid-column: 2/4;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar {
+    grid-row: 1/2;
+}

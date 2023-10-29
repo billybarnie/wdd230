@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="description"    content="Irving Chamber of Commerce Home Page">
+    <meta name="author"         content="Billy Barnie">
+    <meta property="og:title"   content="Billy Barnie - Irving Chamber of Commerce Home Page">
+    <meta property="og:type"    content="website">
+    <meta property="og:image"   content="https://www.tourtexas.com/bodyCopy_images/Irving/mandalay-canals-las-colinas-texas.jpg">
+    <meta property="og:url"     content="https://billybarnie.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet"      href="styles/normalize.css">
+    <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet"      href="styles/medium.css">
+    <link rel="stylesheet"      href="styles/larger.css">
+    <link rel="icon"            href="faviconchamber.ico">
+    <title>Irving Chamber of Commerce Home Page</title>
+</head>
+<body class="light">
+    <header>
+        <h1>Irving <br><span>Chamber Of Commerce</span></h1> 
+        <img class="logo" src="images/chamber_logo.png" alt="Chamber of commerce logo">
+    </header>
+    <div class="hero">
+        <picture>
+            <source srcset="images/irving_hero_small.webp" media="(max-width: 500px)">
+            <source srcset="images/irving_hero_medium.webp" media="(max-width: 1000px)">
+            <img src="images/irving_hero.webp" alt="hero-image">
+        </picture>
+    </div>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigate">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join Us</a></li>
+        </ul>
+        <div id="mode">
+            🕶️
+        </div>
+    </nav>
+    <main class="discover-main">
+        <section class="events sidebar">
+            <h2>Events</h2>
+            <ul>
+                <li class="light">
+                    <h3>Irving Chamber Grand Opening</h3>
+                    <p>Join us in cutting the ribbon to the doors of The Irving Chamber of Commerce, where we will have plenty of Events coming in the next few months. The Ribbon cutting will be taking place at 12 noon on November the first at Rock Island and McAuther, our main Quarters.</p>
+                </li>
+                <li class="light">
+                    <h3>Interns Make Careers</h3>
+                    <p>Welcome welcome, come to Rolston Road in Irving Texas on November the 17th  at 3pm in speaking with managers and CEOs alike from all over the local area of Irving to get started in an amazing career that we are sure you will have joy in for years to come.</p>
+                </li>
+                <li class="light">
+                    <h3>From Managers to CEOs</h3>
+                    <p>Hello, and welcome all managers and CEOs for your opportunity in meeting with other managers and CEOS in the local area on November the 25th at Story Road and Poineer at 9am, as well as from other areas to take part in learning from one anothers businesses and form larger communities.</p>
+                </li>
+                <li class="light">
+                    <h3>Visit Counter</h3>
+                    <p><span class="visits"></span></p>
+                </li>
+            </ul>
+        </section>
+        <section class="weather images">
+            <h2>Images</h2>
+            <ul>
+                <li class="light">
+                    <img src="images/event_img_1.webp" alt="event image 1">
+                </li>
+                <li class="light">
+                    <img src="images/event_img_2.webp" alt="event image 2">
+                </li>
+                <li class="light">
+                    <img src="images/event_img_3.webp" alt="event image 3">
+                </li>
+                <li class="light">
+                    <img src="images/event_img_4.webp" alt="event image 4">
+                </li>
+                <li class="light">
+                    <img src="images/event_img_5.webp" alt="event image 5">
+                </li>
+                <li class="light">
+                    <img src="images/event_img_6.webp" alt="event image 6">
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Irving Chamber of Commerce | Billy Barnie | Contact us: 1-800-1IRVING JimmyDee DR, Irving TX 75060</p>
+        <p>WDD 230 Project | Last Moditication: <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/modification.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/visited.js"></script>
+</body>
+</html>
