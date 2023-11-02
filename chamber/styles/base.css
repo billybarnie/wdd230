@@ -196,7 +196,8 @@ footer {
     margin-top: auto;
     background-color: #780000;
     color: #fff;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
 }
 
@@ -243,8 +244,19 @@ footer {
 .images img {
     max-width: 100%;
     height: auto;
+    transition: filter 0.3s;
+    padding: 15px;
 }
 
 .sidebar {
     margin-bottom: auto;
+}
+
+.images img:hover {
+    filter: brightness(.7);
+}
+
+.images caption {
+    caption-side: bottom;
+    text-align: center;
 }

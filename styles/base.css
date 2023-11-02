@@ -122,45 +122,23 @@ iframe {
     max-width: 960px;
     height: auto;
     padding-bottom: 1em;
+    transition: filter 0.3s;
 }
 
 .hero {
     display: grid;
     place-items: center;
-}
-
-.hero {
     position: relative;
 }
 
-.hero-overlay {
+.hero img:hover {
+    filter: brightness(.7);
+}
+
+.hero h1 {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 97%;
-    background-color: rgba(0, 0, 0, 0.6); 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.hero-overlay:hover {
-    opacity: 1;
-}
-
-.hero-overlay h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.hero-overlay p {
-    font-size: 16px;
+    top: 10px;
+    left: 8.5em;
 }
 
 .saint-map {

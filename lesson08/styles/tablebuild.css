@@ -1,0 +1,14 @@
+table {
+    border: solid thin hsla(0,0%,20%,.8);
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    color: white;
+    border: solid thin hsla(0,0%,20%,.8);
+}
+
+caption {
+    caption-side: bottom;
+}
