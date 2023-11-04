@@ -162,3 +162,12 @@ iframe {
 .saint-map:active {
     color: darkgray;
 }
+
+.recorded {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.record {
+    padding: 100px;
+}
