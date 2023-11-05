@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="description"    content="Irving Chamber of Commerce Home Page">
+    <meta name="author"         content="Billy Barnie">
+    <meta property="og:title"   content="Billy Barnie - Irving Chamber of Commerce Home Page">
+    <meta property="og:type"    content="website">
+    <meta property="og:image"   content="https://www.tourtexas.com/bodyCopy_images/Irving/mandalay-canals-las-colinas-texas.jpg">
+    <meta property="og:url"     content="https://billybarnie.github.io/wdd230/chamber/index.html">
+    <link rel="stylesheet"      href="styles/normalize.css">
+    <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet"      href="styles/medium.css">
+    <link rel="stylesheet"      href="styles/larger.css">
+    <link rel="icon"            href="faviconchamber.ico">
+    <title>Irving Chamber of Commerce Home Page</title>
+</head>
+<body class="light">
+    <header>
+        <h1>Irving <br><span>Chamber Of Commerce</span></h1> 
+        <img class="logo" src="images/chamber_logo.png" alt="Chamber of commerce logo">
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigate">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join Us</a></li>
+        </ul>
+        <div id="mode">
+            🕶️
+        </div>
+    </nav>
+    <main class="join-main light">
+        <form action="join-us.html" method="get" class="join light">
+            <fieldset>
+                <legend class="sbs">Applicant Information</legend>
+                <label class="sbs">First Name * <input type="text" name="fname" required></label>
+                <label class="sbs">Last Name * <input type="text" name="lname" required></label>
+                <label class="sbs">Job Title * <input type="text" name="title" id="title" pattern="[A-Za-z\- ]{7,}"></label>
+                <label class="sbs">Phone * <input type="tel" name="phone" required></label>
+                <label class="sbs">Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend class="sbs">Business Information</legend>
+                <label class="sbs">Occupation Business Name <input type="text" name="business" id="business"></label>
+                <label class="sbs">Membership Level
+                    <select name="subject">
+                        <option value="">Please Select &#9662;</option>
+                        <option value="np">NP (non-profit) Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label class="sbs">
+                    Organization description
+                    <textarea name="description" id="description" cols="80" rows="4"></textarea>
+                </label>
+                <label class="top">Anticipated Completion Date <input type="date" name="completedDate"></label>
+            </fieldset>
+            <input type="submit" value="Join Us" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> Irving Chamber of Commerce | Billy Barnie | Contact us: 1-800-1IRVING JimmyDee DR, Irving TX 75060</p>
+        <p>WDD 230 Project | Last Moditication: <span id="lastmodified"></span></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/modification.js"></script>
+    <script src="scripts/darkmodeJoinUs.js"></script>
+</body>
+</html>
