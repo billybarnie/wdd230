@@ -1,7 +1,7 @@
 {
     "lessons" : [
         {
-            "lesson" : "01",
+            "lesson" : "Lesson01",
             "links" : [
                 {
                     "url" : "lesson01/media-query.html",
@@ -14,7 +14,7 @@
             ]
         },
         {
-            "lesson" : "02",
+            "lesson" : "Lesson02",
             "links" : [
                 {
                     "url" : "lesson02/design.html",
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "lesson" : "03",
+            "lesson" : "Lesson03",
             "links" : [
                 {
                     "url" : "images/exercise-completed.png",
@@ -44,7 +44,7 @@
             ]
         },
         {
-            "lesson" : "04",
+            "lesson" : "Lesson04",
             "links" : [
                 {
                     "url" : "https://codepen.io/BillyBarnie/pen/VwqEvMY",
@@ -53,7 +53,7 @@
             ]
         },
         {
-            "lesson" : "05",
+            "lesson" : "Lesson05",
             "links" : [
                 {
                     "url" : "lesson05/bom.html",
@@ -62,7 +62,7 @@
             ]
         },
         {
-            "lesson" : "06",
+            "lesson" : "Lesson06",
             "links" : [
                 {
                     "url" : "images/landscape.webp",
@@ -75,7 +75,7 @@
             ]
         },
         {
-            "lesson" : "07",
+            "lesson" : "Lesson07",
             "links" : [
                 {
                     "url" : "lesson03/lazyload.html",
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "lesson" : "08",
+            "lesson" : "Lesson08",
             "links" : [
                 {
                     "url" : "lesson08/tablebuild.html",
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "lesson" : "09",
+            "lesson" : "Lesson09",
             "links" : [
                 {
                     "url" : "lesson09/new-ward-member.json",
