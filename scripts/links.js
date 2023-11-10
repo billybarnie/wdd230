@@ -17,7 +17,7 @@ async function getLinks() {
 getLinks();
 
 async function getLinks() {
-    const response = await fetch(linksURL);
+    const response = await fetch(baseURL);
     const data = await response.json();
     displayLinks(data);
 }
@@ -40,3 +40,5 @@ const displayLinks = (data) => {
     });
     section.appendChild(ul);
 }
+
+displayLinks()
