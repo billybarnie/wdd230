@@ -3,6 +3,7 @@ const kp2 = document.querySelector("#pwd1");
 const email = document.querySelector("#email");
 const rangeValue = document.querySelector("#rangevalue");
 const range = document.querySelector("#rate");
+const errorMessage = document.querySelector("#error-message");
 
 kp2.addEventListener("focusout", checkSame);
 email.addEventListener("focusout", checkValid);
@@ -10,6 +11,9 @@ range.addEventListener("change", displayRate);
 
 function checkSame() {
 	if (kp1.value !== kp2.value) {
+		
+		errorMessage.textContent = "Passwords don't match";
+        errorMessage.style.color = "red";
 
 		kp2.style.backgroundColor = "#fff0f3";
         kp1.value = "";
