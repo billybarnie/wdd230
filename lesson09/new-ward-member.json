@@ -1,0 +1,23 @@
+{
+    "familyName" : "Barnie",
+    "familyJoinDate" : "Thursday November 9th 2020",
+    "membersJoined" : 1,
+    "vistitedByBishop" : false,
+    "familyMembers" : [
+        {
+            "name" : "Ian Barnie",
+            "gender" : "male",
+            "dob" : "02/06/1998"
+        },
+        {
+            "name" : "Lexus Khalee Barnie",
+            "gender" : "female",
+            "dob" : "07/04/1995"
+        },
+        {
+            "name" : "Nova Link Barnie",
+            "gender" : "female",
+            "dob" : "08/22/2022"
+        }
+    ] 
+}
