@@ -5,6 +5,10 @@ const section = document.querySelector(".card");
 const ul = document.querySelector("ul");
 const h3 = document.querySelector("h3");
 
+h3.textContent = "Learning activities";
+
+section.appendChild(h3);
+
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
