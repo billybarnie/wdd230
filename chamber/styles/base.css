@@ -389,3 +389,15 @@ form legend.sbs {
     position: fixed;
     bottom: 0;
 }
+
+.benefit {
+    padding-right: 40px;
+    list-style: none;
+}
+
+.benefit li {
+    padding-bottom: 10px;
+}
+
+
+

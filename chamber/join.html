@@ -55,11 +55,19 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
+                <label class="sbs">Benefits
+                    <ul class="benefit">
+                        <li>NP Member - FaceBook and Twitter exposure</li>
+                        <li>Bronze Member - All Media Platform exposure</li>
+                        <li>Silver Member - All Media and TV exposure</li>
+                        <li>Gold Member - All Media, TV exposure plus public billboard</li>
+                    </ul>
+                </label>
                 <label class="sbs">
                     Organization description
                     <textarea name="description" id="description" cols="80" rows="4"></textarea>
                 </label>
-                <label class="top">Anticipated Completion Date <input type="date" name="completedDate"></label>
+                <label class="top"><input type="hidden" name="completedDate" class="timestamp"></label>
             </fieldset>
             <input type="submit" value="Join Us" class="submitBtn">
         </form>
@@ -71,5 +79,6 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/modification.js"></script>
     <script src="scripts/darkmodeJoinUs.js"></script>
+    <script src="scripts/timeDateStamp.js"></script>
 </body>
 </html>
