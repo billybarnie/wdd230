@@ -399,5 +399,8 @@ form legend.sbs {
     padding-bottom: 10px;
 }
 
+.select {
+    text-align: center;
+}
 
 
