@@ -424,15 +424,15 @@ margin-bottom: 10px;
 
 .member-card a {
     display: inline-block;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #780000;
+    color: #FDF0D5;
     padding: 8px 12px;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .member-card a:hover {
-    background-color: #2980b9;
+    background-color: #780000;
 }
 
 .menu {
