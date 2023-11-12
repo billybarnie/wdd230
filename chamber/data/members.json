@@ -1,66 +1,66 @@
 {
     "member" : [
         {
-            "name" :    "",
-            "address" : "",
-            "number" :  "",
-            "url" :     "",
-            "icon" :    "",
-            "brief" :   ""
+            "name" :    "FranksWEB",
+            "address" : "819 N Belt Line Rd, Irving, TX 75061",
+            "number" :  "677-482-9293",
+            "url" :     "FranksWEBdevs.org",
+            "image" :   "images/franksWEBdevs.webp",
+            "brief" :   "Responsible for the background development of Irving Chamber Commerce."
 
         },
         {
-            "name" :    "",
-            "address" : "",
-            "number" :  "",
-            "url" :     "",
-            "icon" :    "",
-            "brief" :   ""
+            "name" :    "LionsRage",
+            "address" : "440 Ohio Pike, Cincinnati, OH 45255",
+            "number" :  "912-543-6317",
+            "url" :     "RageTech.com",
+            "image" :   "images/lionsRageTech.webp",
+            "brief" :   "LionsRage is the main server we operate off of."
 
         },
         {
-            "name" :    "",
-            "address" : "",
-            "number" :  "",
-            "url" :     "",
-            "icon" :    "",
-            "brief" :   ""
+            "name" :    "LiveLanes",
+            "address" : "4710 Baum Blvd, Pittsburgh, PA 15213",
+            "number" :  "367-888-0000",
+            "url" :     "LiveLanesSponsor.com",
+            "image" :   "images/liveLanes.webp",
+            "brief" :   "LiveLanes makes all of our sponserships possible."
 
         },
         {
-            "name" :    "",
-            "address" : "",
-            "number" :  "",
-            "url" :     "",
-            "icon" :    "",
-            "brief" :   ""
+            "name" :    "HRxFavor",
+            "address" : "3045 N Pulaski Rd, Chicago, IL 60641",
+            "number" :  "552-611-9898",
+            "url" :     "HRx.com",
+            "image" :   "images/HR-company.webp",
+            "brief" :   "HR support for continuous company improvement."
 
         },
         {
-            "name" :    "",
-            "address" : "",
-            "number" :  "",
-            "url" :     "",
-            "icon" :    "",
-            "brief" :   ""
+            "name" :    "LuXbuild",
+            "address" : "8920 Atlantic Ave, Queens, NY 11416",
+            "number" :  "580-777-3468",
+            "url" :     "LuXbuildSupporters.com",
+            "image" :   "images/customer-support.webp",
+            "brief" :   "Customer support service at LuXbuildSupporters."
 
         },
         {
-            "name" :    "",
-            "address" : "",
-            "number" :  "",
-            "url" :     "",
-            "icon" :    "",
-            "brief" :   ""
+            "name" :    "EventsDotTrack",
+            "address" : "8411 GA-85, Riverdale, GA 30274",
+            "number" :  "780-000-9999",
+            "url" :     "EventsDotTracking.net",
+            "image" :   "images/EventsDotTrack.webp",
+            "brief" :   "Manages events and planning for Irving Chamber Community."
 
         },
         {
-            "name" :    "",
-            "address" : "",
-            "number" :  "",
-            "url" :     "",
-            "icon" :    "",
-            "brief" :   ""
+            "name" :    "XEportCater",
+            "address" : "701 NJ-440, Jersey City, NJ 07305",
+            "number" :  "684-452-7856",
+            "url" :     "XEportCatering.org",
+            "image" :   "images/ExportCatering1.webp",
+            "brief" :   "Handles catering services at XEportCatering."
 
         }
     ]
