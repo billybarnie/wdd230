@@ -28,20 +28,20 @@ const displayLinks = (data) => {
         if (member.name) {
             let memberCard = document.createElement("div");
             let p = document.createElement("p");
-            let img = document.createElement("img");
+            let image = document.createElement("img");
             let a = document.createElement("a");
 
-            memberCard.classList.add("member-card"); // Add a class for styling
+            memberCard.classList.add("member-card");
 
-            img.src = member.image || "path_to_default_image.jpg";
-            img.alt = member.name;
+            image.src = member.image || "path_to_default_image.jpg";
+            image.alt = member.name;
 
-            img.style.display = "block";
-            img.style.borderRadius = "10px";
+            image.style.display = "block";
+            image.style.borderRadius = "10px";
 
             p.innerHTML = `<strong>${member.name}</strong><br>${member.address}<br>${member.number}<br>${member.brief}`;
             
-            memberCard.appendChild(img);
+            memberCard.appendChild(image);
             memberCard.appendChild(p);
 
             a.setAttribute("href", member.url || "#");
@@ -53,8 +53,33 @@ const displayLinks = (data) => {
         } else {
             console.warn("Member name is missing.");
         }
+
+        const gridbutton = document.querySelector("#grid");
+        const listbutton = document.querySelector("#list");
+        const display = document.querySelector(".member-grid");
+    
+    
+    
+        gridbutton.addEventListener("click", () => {
+    
+            display.classList.add("grid");
+            display.classList.remove("list");
+    
+            image.style.visibility = "visible";
+        });
+    
+        listbutton.addEventListener("click", showList);
+    
+        function showList() {
+            display.classList.add("list");
+            display.classList.remove("grid");
+    
+        image.style.visibility = "hidden";
+        };
     });
 };
+
+
 
 getLinks();
 
