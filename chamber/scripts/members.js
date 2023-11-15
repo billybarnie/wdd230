@@ -32,6 +32,7 @@ const displayLinks = (data) => {
             let a = document.createElement("a");
 
             memberCard.classList.add("member-card");
+            image.classList.add("image");
 
             image.src = member.image || "path_to_default_image.jpg";
             image.alt = member.name;
@@ -65,16 +66,29 @@ const displayLinks = (data) => {
             display.classList.add("grid");
             display.classList.remove("list");
     
-            image.style.visibility = "visible";
+            const display_images = document.querySelectorAll(".image");
+
+            display_images.forEach((currimage) => {
+                currimage.style.display = "block";
+
+            });
         });
     
         listbutton.addEventListener("click", showList);
     
         function showList() {
+
             display.classList.add("list");
             display.classList.remove("grid");
-    
-        image.style.visibility = "hidden";
+
+            const display_images = document.querySelectorAll(".image");
+
+            display_images.forEach((currimage) => {
+                currimage.style.display = "none";
+
+            });
+
+            
         };
     });
 };

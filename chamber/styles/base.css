@@ -457,3 +457,20 @@ margin-bottom: 10px;
     list-style: none;
 }
 
+.list p > * {
+    display: flex;
+    flex-direction: row;
+}
+
+.list p #text {
+    display: flex;
+    flex-direction: row;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; 
+}
