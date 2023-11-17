@@ -144,16 +144,29 @@
         width: 80%;
     }
 
-    .member {
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        justify-content: center;
-        padding: 0;
-        list-style: none;
-    }
-
     .menu {
         display: none;
     }
+
+    .member-grid {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .list {
+        flex-direction: column;
+    }
+
+    .list div > * {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        row-gap: 20px;
+    }
+
+    img.image {
+        display: block;
+    }
+
+    
 }

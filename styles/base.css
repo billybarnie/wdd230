@@ -171,3 +171,7 @@ iframe {
 .record {
     padding: 100px;
 }
+
+figure {
+    margin-left: 0;
+}
