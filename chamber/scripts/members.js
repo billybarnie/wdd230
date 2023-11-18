@@ -43,38 +43,59 @@ const displayLinks = (data) => {
 
     data.member.forEach(member => {
         if (member.name) {
-            const memberCard = createHTMLElement("div", "member-card");
-            const directMember = createHTMLElement("div", "direct_member");
-            const image = createHTMLElement("img", "image");
-            const nameElement = createHTMLElement("strong");
-            const addressElement = createHTMLElement("div");
-            const numberElement = createHTMLElement("div");
-            const briefElement = createHTMLElement("div");
-            const a = createHTMLElement("a");
+            const memberCard = createHTMLElement ("div", "member-card");
+            const imageElement = document.createElement ("img");
 
-            image.src = member.image || "path_to_default_image.jpg";
-            image.alt = member.name;
-            image.style.display = "block";
-            image.style.borderRadius = "10px";
+            imageElement.classList.add('image');
 
+            imageElement.src = member.image || "path_to_default_image jpg";
+            imageElement.alt = member.name;
+
+            imageElement.style.display = "block";
+            imageElement.style.borderRadius = "10px";
+
+            memberCard.appendChild (imageElement);
+            const nameElement = document.createElement ("span");
+
+            nameElement.classList.add('member_data', 'member_name');
             nameElement.textContent = member.name;
+
+            memberCard.appendChild(nameElement);
+
+            const addressElement = document.createElement ("span");
+
+            addressElement.classList.add('member_data', 'member_address');
             addressElement.textContent = member.address;
+
+            memberCard.appendChild(addressElement);
+
+            const numberElement = document.createElement ("span");
+
+            numberElement.classList.add('member_data','member_number');
             numberElement.textContent = member.number;
+
+            memberCard.appendChild(numberElement);
+
+            const briefElement = document.createElement ("span");
+
+            briefElement.classList.add('member_data', 'member_brief');
             briefElement.textContent = member.brief;
 
-            directMember.appendChild(image);
-            directMember.appendChild(nameElement);
-            directMember.appendChild(addressElement);
-            directMember.appendChild(numberElement);
-            directMember.appendChild(briefElement);
-            memberCard.appendChild(directMember);
+            memberCard.appendChild(briefElement);
 
-            a.setAttribute("href", member.url || "#");
-            a.setAttribute("target", "_blank");
-            a.textContent = member.url || "No Website";
+            const linkElement = document.createElement ("span");
 
-            directMember.appendChild(a);
+            linkElement.classList.add('member_data', 'member_link');
+            const aElement = document.createElement ("a");
+
+            aElement.setAttribute("href", member.url || "#");
+            aElement.setAttribute("target","_blank");
+            aElement.textContent = member.url || "No Website";
+
+            linkElement.appendChild(aElement);
+            memberCard.appendChild(linkElement);
             section.appendChild(memberCard);
+
         } else {
             console.warn("Member name is missing.");
         }

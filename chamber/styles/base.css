@@ -468,11 +468,41 @@ margin-bottom: 10px;
 	display: none; 
 }
 
-.list div:nth-child(even) {
+.list.member-card:nth-child(even) {
     background-color: #FDF0D5;
 }
 
-.list div:nth-child(odd) {
+.list.member-card:nth-child(odd) {
     background-color: #EFEFEF;
 }
 
+.grid.member_data {
+    display:flex;
+    flex-direction: column;
+    text-align: center; 
+    padding: 5px 0;
+}
+
+.list .member-card {
+    display:flex;
+    flex-direction: row; align-items: center;
+    margin: 10px 0;
+}
+
+.member_name {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.member_data {
+    padding: 0 10px;
+}
+
+span.member_data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
