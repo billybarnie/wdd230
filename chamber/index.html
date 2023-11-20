@@ -28,6 +28,8 @@
             <img src="images/irving_hero.webp" alt="hero-image">
         </picture>
     </div>
+    <div id="banner">
+    </div>
     <nav>
         <button id="menu"></button>
         <ul class="navigate">
@@ -57,7 +59,12 @@
                     <p>Enter Temperature (in F): <input type="text" id="temperature"></p>
                     <p>Enter wind speed (in mph): <input type="text" id="windSpeed"></p>
                     <button onclick="windChill()">Calculate Wind Chill</button>
+                    <p><span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt=""> <figcaption></figcaption>
+                    </figure>
                     <p id="result"></p>
+                    <div id="forecast"></div>
                 </li>
             </ul>
         </section>
@@ -78,5 +85,7 @@
     <script src="scripts/modification.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
