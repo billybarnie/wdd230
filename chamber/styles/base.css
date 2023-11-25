@@ -35,7 +35,8 @@ header {
     padding: .5em 2em;
     display: flex; 
     justify-content: space-between; 
-    align-items: center; 
+    align-items: center;
+    z-index: 2;
 }
 
 header span {
@@ -58,6 +59,7 @@ nav {
     position: fixed;
     top: 150px;
     width: 100%;
+    z-index: 3;
 }
 
 .navigate {
@@ -138,6 +140,10 @@ main section ul li {
     grid-row: 1/2;
 }
 
+.events ul li h3 {
+    padding-left: .5em;
+    padding-right: .5em;
+}
 .events ul {
     list-style-type: none;
     display: grid;
@@ -147,8 +153,17 @@ main section ul li {
 }
 
 .events ul li p, .spotlight ul li p {
-    padding: 2em;
+    padding: 1em;
     font-size: 20px;
+}
+
+.events ul li, .weather ul li {
+    height: auto;
+    margin: 0 auto;
+}
+
+.weather ul li {
+    padding: 2em;
 }
 
 .events h3, .spotlight h3 {
@@ -169,10 +184,6 @@ main section ul li {
     padding: 0 20px;
 }
 
-.weather ul li p {
-    padding: .5em;
-
-}
 .spotlight {
     justify-content: center;
     text-align: center;
@@ -271,7 +282,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;    
     margin-top: 14rem;
 }
@@ -284,7 +295,7 @@ footer {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 10px;
     margin-top: 14rem;
 }
@@ -441,8 +452,11 @@ margin-bottom: 10px;
 	margin: 1rem auto;
 	padding: 0.5rem;
 	text-align: center;
+    margin-top: 200px;
 }
-
+main.discover-main {
+    margin-top: 200px;
+}
 .member-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -570,4 +584,37 @@ span.member_data {
 
 .list .member-card:nth-child(odd) {
     background-color: #EFEFEF;
+}
+
+.cta-button {
+    position: absolute;
+    top: 5em;
+    left: 7em;
+    transform: translate(-50%, -50%);
+    background-color: #780000;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.cta-button a {
+    color: #FDF0D5;
+    text-decoration: none;
+}
+
+.benefit {
+    margin: 2rem 0px;
+}
+
+.benefit li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin: 2rem 0px;
 }

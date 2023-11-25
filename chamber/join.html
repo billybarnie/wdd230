@@ -34,18 +34,18 @@
         </div>
     </nav>
     <main class="join-main light">
-        <form action="thank-you.html" method="get" class="join light">
+        <form action="thankyou.html" method="get" class="join light">
             <fieldset>
                 <legend class="sbs">Applicant Information</legend>
                 <label class="sbs">First Name * <input type="text" name="fname" required></label>
                 <label class="sbs">Last Name * <input type="text" name="lname" required></label>
-                <label class="sbs">Job Title * <input type="text" name="title" id="title" pattern="[A-Za-z\- ]{7,}"></label>
+                <label class="sbs">Job Title * <input type="text" name="title" id="title" pattern="[A-Za-z\- ]{7,}" required></label>
                 <label class="sbs">Phone * <input type="tel" name="phone" placeholder="1233334751" required></label>
                 <label class="sbs">Email * <input type="email" name="email" placeholder="someone@gmail.com" required></label>
             </fieldset>
             <fieldset>
                 <legend class="sbs">Business Information</legend>
-                <label class="sbs">Occupation Business Name <input type="text" name="business" id="business"></label>
+                <label class="sbs">Occupation Business Name <input type="text" name="business" id="business" pattern="[A-Za-z\- ]{7,}"></label>
                 <label class="sbs">Membership Level
                     <select name="subject">
                         <option value="" class="select">Please Select</option>
@@ -55,14 +55,7 @@
                         <option value="gold">Gold Membership</option>
                     </select>
                 </label>
-                <label class="sbs">Benefits
-                    <ul class="benefit">
-                        <li>NP Member - FaceBook and Twitter exposure</li>
-                        <li>Bronze Member - All Media Platform exposure</li>
-                        <li>Silver Member - All Media and TV exposure</li>
-                        <li>Gold Member - All Media, TV exposure plus public billboard</li>
-                    </ul>
-                </label>
+                
                 <label class="sbs">
                     Organization description
                     <textarea name="description" id="description" cols="80" rows="4"></textarea>
@@ -71,6 +64,16 @@
             </fieldset>
             <input type="submit" value="Join Us" class="submitBtn">
         </form>
+        <div>
+            <label class="benehead">Benefits
+                    <ul class="benefit">
+                        <li>NP Member - FaceBook and Twitter exposure</li>
+                        <li>Bronze Member - All Media Platform exposure</li>
+                        <li>Silver Member - All Media and TV exposure</li>
+                        <li>Gold Member - All Media, TV exposure plus public billboard</li>
+                    </ul>
+            </label>
+        </div>
     </main>
     <footer>
         <p>&copy; <span id="year"></span> Irving Chamber of Commerce | Billy Barnie | Contact us: 1-800-1IRVING JimmyDee DR, Irving TX 75060</p>

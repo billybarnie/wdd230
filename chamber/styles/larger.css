@@ -188,4 +188,8 @@
     main section ul li {
         height: auto;
     }
+
+    main.discover-main {
+        margin-top: 0;
+    }
 }
