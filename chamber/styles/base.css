@@ -133,6 +133,10 @@ main section ul li {
     height: auto;
 }
 
+.spotlight ul li a {
+    color: #780000;
+}
+
 .events {
     text-align: center;
     width: 100%;
@@ -356,6 +360,7 @@ form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
     text-align: center;
+    font-size: 24px;
 }
 
 form label.top, form div {
@@ -377,6 +382,7 @@ form label.sbs {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
 }
 
 form input.submitBtn {
@@ -387,6 +393,7 @@ form input.submitBtn {
     padding: .75rem 1.5rem;
     width: 96%;
     max-width: 20rem;
+    font-size: 20px;
 }
 
 form legend.sbs {
@@ -410,6 +417,7 @@ form legend.sbs {
 
 .benefit li {
     padding-bottom: 10px;
+    font-size: 20px;
 }
 
 .select {
@@ -497,6 +505,7 @@ main.discover-main {
     flex-direction: column;
     text-align: center; 
     padding: 5px 0;
+
 }
 
 .list .member-card {
@@ -518,6 +527,8 @@ span.member_data {
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 10px;
+    font-size: 20px;
 }
 
 #banner div {
@@ -642,4 +653,8 @@ img.\.member-silver {
 img.\.member-bronze {
     max-width: 200px;
     height: auto;
+}
+
+li.light div {
+    font-size: 20px;
 }
