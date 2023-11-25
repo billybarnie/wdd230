@@ -76,6 +76,11 @@ function displayForecast(data) {
 }
 
 function dayOfWeek(day) {
+
+    if (day >= 7) {
+        day -= 7;
+    }
+
     switch (day) {
 
         case 0:
