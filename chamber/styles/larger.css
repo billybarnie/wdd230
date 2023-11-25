@@ -261,4 +261,25 @@
         max-width: 150px;
         height: auto;
     }
+
+    .cta-button {
+        position: absolute;
+        top: 4em;
+        left: 5.5em;
+        transform: translate(-50%, -50%);
+        background-color: #780000;
+        color: #fff;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border: none;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 5px;
+    }
+    
+    .navigate li {
+        font-size: 15px;
+    }
+    
 }
