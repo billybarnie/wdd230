@@ -315,4 +315,9 @@
     .events ul li h3, .spotlight ul li h3 {
         font-size: 20px;
     }
+
+    .navigate .current-page {
+        display: none;
+    }
+
 }

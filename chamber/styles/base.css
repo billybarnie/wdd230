@@ -658,3 +658,11 @@ img.\.member-bronze {
 li.light div {
     font-size: 20px;
 }
+
+.navigate .current-page {
+    border: 2px solid #FFBCC1; /* You can change the border color */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    display: inline;
+    margin-right: 20px;
+    padding-left: 40px;
+}
