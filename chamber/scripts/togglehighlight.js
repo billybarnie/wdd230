@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     navLinks.forEach(function (link) {
         if (link.href === currentPageUrl) {
-            link.style.color= "#FFBCC1";
+            link.style.color= "#A9A9A9";
         }
     });
 
