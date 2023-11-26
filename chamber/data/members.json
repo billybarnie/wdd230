@@ -6,7 +6,8 @@
             "number" :  "677-482-9293",
             "url" :     "FranksWEBdevs.org",
             "image" :   "images/franksWEBdevs.webp",
-            "brief" :   "Handles background development for the Irving Chamber."
+            "brief" :   "Handles background development for the Irving Chamber.",
+            "membershipType": "gold"
 
         },
         {
@@ -15,7 +16,8 @@
             "number" :  "912-543-6317",
             "url" :     "RageTech.com",
             "image" :   "images/lionsRageTech.webp",
-            "brief" :   "LionsRage is the main server we operate off of."
+            "brief" :   "LionsRage is the main server we operate off of.",
+            "membershipType": "gold"
 
         },
         {
@@ -42,7 +44,8 @@
             "number" :  "580-777-3468",
             "url" :     "LuXbuildSupporters.com",
             "image" :   "images/customer-support.webp",
-            "brief" :   "Customer support service at LuXbuildSupporters."
+            "brief" :   "Customer support service at LuXbuildSupporters.",
+            "membershipType" : "silver"
 
         },
         {
