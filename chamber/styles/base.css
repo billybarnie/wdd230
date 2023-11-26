@@ -660,8 +660,8 @@ li.light div {
 }
 
 .navigate .current-page {
-    border: 2px solid #FFBCC1; /* You can change the border color */
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border: 2px solid #FFBCC1;
+    border-radius: 5px;
     display: inline;
     margin-right: 20px;
     padding-left: 40px;
