@@ -3,11 +3,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var currentPageUrl = window.location.href;
     var navLinks = document.querySelectorAll('.navigate a');
 
-    if (viewportWidth > 560) {
-        navLinks.forEach(function (link) {
-            if (link.href === currentPageUrl) {
-                link.parentElement.classList.add('current-page');
-            }
-        });
-    }
+    navLinks.forEach(function (link) {
+        if (link.href === currentPageUrl) {
+            link.style.color= "#FFBCC1";
+        }
+    });
+
 });
