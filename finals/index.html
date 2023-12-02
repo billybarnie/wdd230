@@ -5,13 +5,78 @@
     <meta name="viewport"       content="width=device-width, initial-scale=1.0">
     <meta name="description"    content="WDD 230 - Web Frontend Development Finals, Ian William Barnie, Scoots Home Page">
     <meta name="author"         content="Billy Barnie">
-    <meta property="og:title"   content="Ian William Barnie - WDD 230 - Frontend Web Development Finals">
+    <meta property="og:title"   content="Scoots Rental Company - Located in Cozumel - Finals Project from Billy Barnie">
     <meta property="og:type"    content="website">
     <meta property="og:image"   content="https://www.caribjournal.com/wp-content/uploads/2017/03/Ambergris-Caye.jpg">
     <meta property="og:url"     content="https://billybarnie.github.io/wdd230/finals">
+    <link rel="stylesheet"      href="styles/normalize.css">
+    <link rel="stylesheet"      href="styles/base.css">
     <title>Scoots - Home</title>
 </head>
 <body>
-    
+    <header>
+        <picture>
+            <img class="logo" src="images/scoots_rental.png" alt="scoots logo">
+        </picture>
+    </header>
+    <ul class="call">
+        <li><img src="images/insta_logo.png" alt=""></li>
+        <li><img src="images/fb_logo.png" alt=""></li>
+        <li><img src="images/tiktok.png" alt=""></li>
+        <li><a href="#">Rent Today!</a></li>
+    </ul>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label>
+    <div class="line"></div>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigate">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Rentals</a></li>
+            <li><a href="#">Reservations</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="line"></div>
+    <picture>
+        <img class="hero" src="images/hero_image.webp" alt="">
+    </picture>
+    <main>
+        <section class="welcome">
+            <h2>Hello and welcome to Scoots Rental!</h2>
+            <p>Here at Scoots Rental Company we help you, our wonderful customer, in providing you with the 
+                best possible customer service located all around the rural locations of Cozumel! Being Cozumel 
+                is a rather large area off the coast of Mexico in the Western Carribean area we like to provide all of our 
+                customers with many different types of scooters, side by side ATV's, and even JEEPS to get around more 
+                efficiently and effectively as well as just being able to get the most out of your hard earned family vacation!!
+                You can find out more on rental prices on the Rentals and Reservation tabs.
+            </p>
+        </section>
+        <section class="weather">
+            <h2>Current Weather</h2>
+        </section>
+        <div class="line lining"></div>
+        <section class="options">
+            <h2>Our Rentals</h2>
+            <p>We have a little additional information on our scooters, side by side ATV's, and our jeeps. First we have our scooters 
+                which feature 3 different types of one to two person Hondas! We also have one type of Honda ATV currently available that 
+                seats four people. If you are a huge ATV fan, need not fret we will have more available for rent in the following month! 
+                And finally we have two different Jeep Wranglers for rent one being a two door that seats four people and the other being 
+                a four door that seats 5 people. Happy Renting!
+            </p>
+            <div class="rent">
+                <a href="#">Rent Today!</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="info"> &copy; <span id="year"></span>  Billy Barnie</p>
+        <p class="contact">Contact info: <br>ScootsRentalCO@outlook.com<br>1-(800)-799-2000</p>
+        <p class="time"><span class="modded"></span></p>
+    </footer>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </body>
 </html>
