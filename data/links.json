@@ -121,6 +121,15 @@
                     "title" : "Weather API"
                 }
             ]
+        },
+        {
+            "lesson" : "Finals",
+            "links" : [
+                {
+                    "url" : "finals/index.html",
+                    "title" : "Scoots"
+                }
+            ]
         }
     ]
 
