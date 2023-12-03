@@ -1,0 +1,43 @@
+@media screen and (min-width: 730px) and (max-width: 1000px) {
+
+    .call {
+        margin-bottom: 20px;
+    }
+
+    .call li {
+        display: block;
+        margin-bottom: -20px;
+    }
+    .call li img {
+        display: none;
+        margin-top: -6px;
+        width: 50px;
+    }
+
+    img.hero {
+        width: 100%;
+        height: auto;
+    }
+
+    .mediumline {
+        display: block;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+      
+    footer p:not(:last-child) {
+        border-right: none;
+    }
+
+    .info,
+    .contact,
+    .time {
+        grid-column: unset;
+        margin-bottom: 10px;
+        margin: 0;
+        padding: 0;
+    }
+}

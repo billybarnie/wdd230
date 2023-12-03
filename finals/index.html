@@ -11,6 +11,8 @@
     <meta property="og:url"     content="https://billybarnie.github.io/wdd230/finals">
     <link rel="stylesheet"      href="styles/normalize.css">
     <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet"      href="styles/medium.css">
+    <link rel="stylesheet"      href="styles/larger.css">
     <title>Scoots - Home</title>
 </head>
 <body>
@@ -25,10 +27,12 @@
         <li><img src="images/tiktok.png" alt=""></li>
         <li><a href="#">Rent Today!</a></li>
     </ul>
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+    <div class="divswitch">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
     <div class="line"></div>
     <nav>
         <button id="menu"></button>
@@ -39,8 +43,10 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
-    <div class="line"></div>
+    <div class="line navline"></div>
     <picture>
+        <source srcset="images/hero_image_small.webp" media="(max-width: 500px)">
+        <source srcset="images/hero_image_medium.webp" media="(max-width: 1000px)">
         <img class="hero" src="images/hero_image.webp" alt="hero image">
     </picture>
     <main>
@@ -71,6 +77,7 @@
             </div>
         </section>
     </main>
+    <div class="line mediumline"></div>
     <footer>
         <p class="info"> &copy; <span id="year"></span>  Billy Barnie</p>
         <p class="contact">Contact info: <br>ScootsRentalCO@outlook.com<br>1-(800)-799-2000</p>
@@ -78,5 +85,6 @@
     </footer>
     <script src="scripts/dates.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/navham.js"></script>
 </body>
 </html>
