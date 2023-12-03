@@ -281,7 +281,7 @@ footer p:not(:last-child) {
     justify-content: center;
 }
 
-.time {
+.modded {
     grid-column: 3/4;
     display: flex;
     align-items: center;

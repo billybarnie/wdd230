@@ -3,4 +3,5 @@ let myYear = myDate.getFullYear();
 
 document.querySelector("#year").textContent = myYear;
 
-document.querySelector(".modded").textContent = myDate;
+let lastModified = new Date(document.lastModified);
+document.querySelector(".modded").textContent = lastModified;

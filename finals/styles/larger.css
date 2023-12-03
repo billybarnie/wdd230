@@ -86,7 +86,6 @@
 
     .info,
     .contact,
-    .time, 
     .modded {
         grid-column: unset;
         margin-bottom: 10px;
