@@ -86,10 +86,11 @@
 
     .info,
     .contact,
-    .time {
+    .time, 
+    .modded {
         grid-column: unset;
         margin-bottom: 10px;
         margin: 0;
-        padding: 0;
+        padding: 0 20px 0 20px;
     }
 }
