@@ -1,0 +1,95 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+main.rental {
+    justify-content: center;
+    align-items: center;
+}
+
+main.rental div.welcome {
+    grid-column: 2/5;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: var(--font-size);
+    font-family: var(--p);
+    border: 1px solid var(--primary-color);
+    background-color: #637E76;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
+}
+
+main.rental div.welcome h2 {
+    font-family: var(--header);
+}
+
+#maindiv {
+    grid-column: 2/5;
+}
+
+.rental section {
+    text-align: center;
+}
+
+.rental section img {
+    width: 100%;
+    padding: 20px 0 0 0;
+}
+
+.rental section div {
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 40px 0 20px 0;
+    font-family: var(--p);
+    font-size: var(--font-size);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.rental h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: var(--header);
+}
+
+.rental section.rentaltabledata {
+    padding: 20px;
+    grid-column: 1/6;
+    background: linear-gradient(to top, var(--secondary-color), var(--primary-color));
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--accent-color);
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: var(--font-size);
+    font-family: var(--p);
+}
+
+th {
+    background-color: lightgray;
+}
+
+@media screen and (min-width: 300px) and (max-width: 729px) {
+
+    .rental section div {
+        font-size: var(--mobile-font);
+    }
+
+    main {
+        grid: unset;
+    }
+}

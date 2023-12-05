@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="description"    content="WDD 230 - Web Frontend Development Finals, Ian William Barnie, Scoots Rental Page">
+    <meta name="author"         content="Billy Barnie">
+    <meta property="og:title"   content="Scoots Rental Page - Located in Cozumel - Finals Project from Billy Barnie">
+    <meta property="og:type"    content="website">
+    <meta property="og:image"   content="https://www.caribjournal.com/wp-content/uploads/2017/03/Ambergris-Caye.jpg">
+    <meta property="og:url"     content="https://billybarnie.github.io/wdd230/finals">
+    <link rel="stylesheet"      href="styles/normalize.css">
+    <link rel="stylesheet"      href="styles/rental.css">
+    <link rel="stylesheet"      href="styles/base.css">
+    <link rel="stylesheet"      href="styles/medium.css">
+    <link rel="stylesheet"      href="styles/larger.css">
+    <title>Scoots - Rental</title>
+</head>
+<body>
+    <header>
+        <picture>
+            <img class="logo" src="images/scoots_rental.png" alt="scoots logo">
+        </picture>
+    </header>
+    <ul class="call">
+        <li><a href="#"><img src="images/insta_logo.png" alt=""></a></li>
+        <li><a href="#"><img src="images/fb_logo.png" alt=""></a></li>
+        <li><a href="#"><img src="images/tiktok.png" alt=""></a></li>
+        <li><a href="reservation.html" class="renttoday">Rent Today!</a></li>
+    </ul>
+    <div class="divswitch">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <div class="line"></div>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigate">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rental.html">Rentals</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="line navline"></div>
+    <main class="rental">
+        <div class="welcome">
+            <h2> Hello and Welcome to our rental section!!</h2>
+            <p>In the rental section we would like to go over our prices. You will be able to readily see what  all you will be renting out 
+                either today or whenever you so choose via reservation. We have tried to do our best in ensuring that all prices are reasonable 
+                and afforable for you as the customer. You can make the purchase on the reservations tab today.
+            </p>
+        </div>
+        <div id="maindiv"></div>
+        <section class="rentaltabledata">
+            <h1>Rental Prices</h1>
+            <table id="rentalTable">
+                <thead>
+                    <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Persons</th>
+                    <th>Reservation - Half Day</th>
+                    <th>Reservation - Full Day</th>
+                    <th>Walk-In - Half Day</th>
+                    <th>Walk-In - Full Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <div class="line mediumline"></div>
+    <footer>
+        <p class="info"> &copy; <span id="year"></span>  Billy Barnie</p>
+        <p class="contact">Contact info: <br>ScootsRentalCO@outlook.com<br>1-(800)-799-2000</p>
+        <p class="modded"><span class="modded"></span></p>
+    </footer>
+    <script src="scripts/dates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/navham.js"></script>
+    <script src="scripts/rentaltabledata.js"></script>
+    <script src="scripts/rentalmain.js"></script>
+</body>
+</html>
