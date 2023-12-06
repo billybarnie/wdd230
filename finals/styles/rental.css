@@ -1,6 +1,7 @@
 main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    transition: background-color 0.5s;
 }
 
 main.rental {
@@ -17,8 +18,9 @@ main.rental div.welcome {
     font-size: var(--font-size);
     font-family: var(--p);
     border: 1px solid var(--primary-color);
-    background-color: #637E76;
+    background-color: var(--primary-color);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
+    transition: background-color 0.5s;
 }
 
 main.rental div.welcome h2 {
@@ -28,6 +30,7 @@ main.rental div.welcome h2 {
 #maindiv {
     grid-column: 2/5;
     display: none;
+    transition: background-color 0.5s;
 }
 
 .rental section {
