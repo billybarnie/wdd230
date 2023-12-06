@@ -5,8 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
     switchBox.addEventListener('change', () => {
         if (switchBox.checked) {
             body.style.background = 'black';
+            body.style.color = 'white';
         } else {
             body.style.background = 'white';
+            body.style.color = 'black';
         }
     });
 });
