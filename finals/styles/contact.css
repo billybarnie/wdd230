@@ -46,6 +46,7 @@ section.ourcontact {
     border-radius: 10px;
     font-size: 20px;
     font-family: var(--p);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
     border: 1px solid linear-gradient(to top, var(--secondary-color), var(--primary-color));
     background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
 }
@@ -90,6 +91,7 @@ form {
     text-align: left;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .75);
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
 }
@@ -122,6 +124,12 @@ textarea {
     border: 1px solid gray;
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+.submitBtn {
+    font-size: 20px;
+    font-family: var(--header);
+    background-color: var(--secondary-color);
 }
 
 @media screen and (min-width: 375px) and (max-width: 850px) {

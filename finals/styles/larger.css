@@ -74,6 +74,14 @@
         display: block;
     }
 
+    .homemain .weather {
+        grid-column: 1/6;
+    }
+
+    p#currentWeather {
+        padding: 0 20px 10px;
+    }
+
     img.hero {
         width: 100%;
         height: auto;
