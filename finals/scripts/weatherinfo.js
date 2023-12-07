@@ -1,6 +1,6 @@
 const apiKey = '57e8a0d56447b6d63f2e95f0a11177e2';
-const latitude = 32.839007;
-const longitude = -96.979618;
+const latitude = 20.500682;
+const longitude = -86.951317;
 
 async function fetchWeather() {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
@@ -30,7 +30,7 @@ function displayCurrentWeather(data) {
 
 fetchWeather();
 
-const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=32.839007&lon=-96.979618&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
+const forecastUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.500682&lon=-86.951317&units=imperial&appid=57e8a0d56447b6d63f2e95f0a11177e2';
 
 async function apiFetch() {
     try {
