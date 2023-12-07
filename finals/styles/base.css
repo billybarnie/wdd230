@@ -299,3 +299,29 @@ footer p:not(:last-child) {
     justify-content: center;
     text-align: center;
 }
+
+.appremain {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.appremain section {
+    margin-top: 10em;
+    margin-bottom: 15em;
+    text-align: center;
+    grid-column: 2/5;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.appremain section h1 {
+    font-size: var(--font-size);
+    font-family: var(--header);
+}
+
+.appremain section p {
+    font-size: 20px;
+    font-family: var(--p);
+}

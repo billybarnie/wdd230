@@ -1,6 +1,7 @@
 main {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    transition: background-color 0.5s;
 }
 
 .space {
@@ -10,6 +11,10 @@ main {
 main section.consumerinfo {
     padding: 20px;
     grid-column: 1/5;
+}
+
+.consumerinfo h2 {
+    display: none;
 }
 
 .consumerinfo legend {
@@ -29,12 +34,49 @@ main section.maps {
     padding: 20px;
     margin: 20px 20px 0 20px;
     border-radius: 10px 10px 0 0;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid linear-gradient(to top, var(--secondary-color), var(--primary-color));
     background: linear-gradient(to top, var(--secondary-color), var(--primary-color));
+}
+
+section.ourcontact {
+    text-align: center;
+    grid-column: 5/8;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: var(--p);
+    border: 1px solid linear-gradient(to top, var(--secondary-color), var(--primary-color));
+    background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+}
+
+.contactlink {
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--accent-color-1);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+}
+
+.contactlink:hover {
+    border: #8b6b52;
+    background-color: #8b6b52;
+    color: var(--accent-color);
+}
+
+.contactlinkdiv {
+    padding: 20px 0 20px 0;
+}
+
+section.ourcontact h2 {
+    font-size: var(--font-size);
+    font-family: var(--header);
 }
 
 .maps h2 {
     text-align: center;
+    color: black;
     font-family: var(--header);
     font-size: var(--font-size);
 }
@@ -76,6 +118,7 @@ textarea {
 
 .consumerinfo input {
     width: 100%;
+    padding: 10px;
     border: 1px solid gray;
     border-radius: 5px;
     box-sizing: border-box;
@@ -83,7 +126,13 @@ textarea {
 
 @media screen and (min-width: 375px) and (max-width: 850px) {
 
-    main {
-        grid: unset;
+    main section.consumerinfo {
+        grid-column: 1/8;
+        justify-content: center;
+    }
+
+    section.ourcontact {
+        grid-column: 1/8;
+        grid-row: 2/3;
     }
 }
