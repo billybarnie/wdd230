@@ -15,14 +15,40 @@ async function fetchWeather() {
   }
 }
 
+function roundDownToNearestTen(number) {
+    return Math.floor(number / 10) * 10;
+  }
+
+  function determineWeatherDescription(temperature, windSpeed) {
+    if (temperature > 80) {
+      return 'It feels hot.';
+    } else if (temperature < 50) {
+      return 'It feels cold.';
+    } else if (windSpeed >= 5 && windSpeed <= 15) {
+      return 'There is a gentle breeze.';
+    } else {
+      return 'The weather is normal.';
+    }
+  }
+  
+
 function displayCurrentWeather(data) {
   const currentTemperature = data.main.temp;
   const currentHumidity = data.main.humidity;
   const currentCondition = data.weather[0].description;
+  const weatherIconCode = data.weather[0].icon;
+  const cityName = data.name;
+  const windSpeed = data.wind.speed;
+
+  const weatherDescription = determineWeatherDescription(currentTemperature, windSpeed);
+
+
 
   const currentWeatherElement = document.getElementById('currentWeather');
   currentWeatherElement.innerHTML = `
-    <p>Current Temperature: ${currentTemperature} &#8457;</p>
+    <h2>${cityName}</h2>
+    <p>Feels like ${roundDownToNearestTen(Math.round(currentTemperature))}. ${weatherDescription}</p>
+    <p><img src="https://openweathermap.org/img/w/${weatherIconCode}.png" alt="Weather Icon"> ${Math.round(currentTemperature)} &#8457;</p>
     <p>Current Humidity: ${currentHumidity}%</p>
     <p>Condition: ${currentCondition}</p>
   `;
@@ -60,9 +86,9 @@ function displayTomorrowForecast(data) {
 
     data.list.forEach((day) => {
         const itemDate = new Date(day.dt * 1000);
-        if (itemDate.getDate() === tomorrow.getDate() && itemDate.getHours() === 12) {
+        if (itemDate.getDate() === tomorrow.getDate() && itemDate.getHours() === 15) {
             const todaytemp = document.createElement('p');
-            todaytemp.textContent = `${Math.round(day.main.temp)} °F`;
+            todaytemp.textContent = `Tomorrow at 3PM: ${Math.round(day.main.temp)} °F`;
             temperatures.appendChild(todaytemp);
         }
     });
