@@ -21,7 +21,9 @@ function roundDownToNearestTen(number) {
 
   function determineWeatherDescription(temperature, windSpeed) {
     if (temperature > 80) {
-      return 'It feels hot.';
+      return 'It feels warm.';
+    } else if (temperature > 100) {
+        return 'it feels hot.'
     } else if (temperature < 50) {
       return 'It feels cold.';
     } else if (windSpeed >= 5 && windSpeed <= 15) {
