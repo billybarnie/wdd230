@@ -75,9 +75,9 @@
             <form action="thankyou.html" method="get">
                 <fieldset class="personalinfo">
                     <h2>Rent or Reserve Today!</h2>
-                    <label class="pi">* First Name: <input type="text" name="firstname" pattern="[A-Za-z]" required><br></label>
+                    <label class="pi">* First Name: <input type="text" name="firstname" pattern="[A-Za-z]+" required><br></label>
                     <label class="pi">Middle initial (optional) <input type="text" name="minitial" pattern="[A-Za-z]" maxlength="1" placeholder="Please Enter a Single Letter"><br></label>
-                    <label class="pi">* Last Name: <input type="text" name="lastname" pattern="[A-Za-z]" required><br></label>
+                    <label class="pi">* Last Name: <input type="text" name="lastname" pattern="[A-Za-z]+" required><br></label>
                     <label class="pi">* Phone Number: <input type="tel" name="phone" placeholder="7774445555" pattern="[0-9]+" required><br></label>
                     <label class="pi">* Email: <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br></label>
                     <label class="pi">* State or Country: <input type="text" name="state" pattern="[A-Za-z\\]*" required></label>
@@ -86,6 +86,7 @@
                     
                 <fieldset class="rentalinfo">
                     <label class="resdates">* Select Your Reservation Date: <br><input type="date" name="resdate" required><br></label>
+                    <label>* Number of Rentals: <br><input type="text" name=""><br></label>
                     <label>* Time: <br>
                         <select name="time">
                             <option value="">Please Select</option>
@@ -94,6 +95,7 @@
                         </select>
                         <br>
                     </label>
+                    
                     <label>* Rental Type: <br>
                         <select name="renttype">
                             <option value="" class="select">Please Select</option>
@@ -111,6 +113,7 @@
                         <textarea name="description" id="description" cols="150" rows="10" required></textarea>
                     </label>
                 </fieldset>
+                <input type="submit" value="Reserve Now!" class="submit">
             </form>
         </section>
     </main>
@@ -124,5 +127,6 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/navham.js"></script>
     <script src="scripts/toggled.js"></script>
+    <script src="scripts/validate.js"></script>
 </body>
 </html>

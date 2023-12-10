@@ -42,11 +42,13 @@ section.rules ul li {
 
 section.forms {
     grid-column: 2/8;
+    text-align: center;
     margin: 20px 20px 0 20px;
     justify-content: center;
 }
 
 section.forms h2 {
+    text-align: left;
     font-size: var(--font-size);
     font-family: var(--header);
 }
@@ -97,4 +99,15 @@ label.pi input {
 label.pi {
     margin-bottom: 10px;
     display: block;
+}
+
+input.submit {
+    text-decoration: none;
+    padding: 15px;
+    border-radius: .5em;
+    font-family: var(--header);
+    font-size: var(--font-size);
+    color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
 }
