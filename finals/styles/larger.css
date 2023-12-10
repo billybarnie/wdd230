@@ -109,4 +109,8 @@
     .navigate li:last-child {
         margin-bottom: 10px;
     }
+
+    section.forms {
+        grid-column: 1/9;
+    }
 }
