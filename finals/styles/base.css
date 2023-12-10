@@ -6,6 +6,7 @@
     --font-size: 25px;
     --header: 'Manrope', sans-serif;
     --p: 'Heebo', sans-serif;
+    --toggle-back: #82644d;
 }
 
 header {
@@ -324,4 +325,9 @@ footer p:not(:last-child) {
 .appremain section p {
     font-size: 20px;
     font-family: var(--p);
+}
+
+.navigate a.current-page {
+    color: var(--accent-color);
+    font-weight: bold;
 }

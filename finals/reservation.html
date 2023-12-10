@@ -13,6 +13,7 @@
     <link rel="stylesheet"      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200&display=swap">
     <link rel="stylesheet"      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap">
     <link rel="stylesheet"      href="styles/normalize.css">
+    <link rel="stylesheet"      href="styles/reservation.css">
     <link rel="stylesheet"      href="styles/base.css">
     <link rel="stylesheet"      href="styles/medium.css">
     <link rel="stylesheet"      href="styles/larger.css">
@@ -47,8 +48,71 @@
         </ul>
     </nav>
     <div class="line navline"></div>
-    <main>
-        
+    <main class="resmain">
+        <section class="rules">
+            <h2>Rules and Agreements!</h2>
+            <p>We enjoy that fact that you are ready to rent from us but we have a certain set of rules and regulations set in mind 
+                to keep our rentors safe and make sure that they have the most enjoyable experience possible. We have a little bit of a motto 
+                behind this that we always say "fun isn't fun without safety!". With that being said we make sure to abide by the rules set in place 
+                by our location as well as making sure others abide by it whether it be in the area or out of the area. We also in it let you know the 
+                costs of things such as delivery and certain other stipulations. You can see our agreements and rules listed down below for more 
+                clarification and remember, happy renting!
+            </p>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
+        <section class="forms">
+            <form action="thankyou.html" method="get">
+                <fieldset class="personalinfo">
+                    <h2>Rent or Reserve Today!</h2>
+                    <label class="pi">* First Name: <input type="text" name="firstname" pattern="[A-Za-z]" required><br></label>
+                    <label class="pi">Middle initial (optional) <input type="text" name="minitial" pattern="[A-Za-z]" maxlength="1" placeholder="Please Enter a Single Letter"><br></label>
+                    <label class="pi">* Last Name: <input type="text" name="lastname" pattern="[A-Za-z]" required><br></label>
+                    <label class="pi">* Phone Number: <input type="tel" name="phone" placeholder="7774445555" pattern="[0-9]+" required><br></label>
+                    <label class="pi">* Email: <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br></label>
+                    <label class="pi">* State or Country: <input type="text" name="state" pattern="[A-Za-z\\]*" required></label>
+                    <label class="pi">Cruise Line (optional) <input type="text"><br></label>
+                </fieldset>
+                    
+                <fieldset class="rentalinfo">
+                    <label class="resdates">* Select Your Reservation Date: <br><input type="date" name="resdate" required><br></label>
+                    <label>* Time: <br>
+                        <select name="time">
+                            <option value="">Please Select</option>
+                            <option value="hday">Half Day(3 hours)</option>
+                            <option value="fday">Full Day(24 hours)</option>
+                        </select>
+                        <br>
+                    </label>
+                    <label>* Rental Type: <br>
+                        <select name="renttype">
+                            <option value="" class="select">Please Select</option>
+                            <option value="hondametro">Honda Metro Scooter</option>
+                            <option value="hondadio">Honda Dio Scooter</option>
+                            <option value="hondapcx">Honda PCX150 Scooter</option>
+                            <option value="hondapoin">Honda Pioneer ATV</option>
+                            <option value="jeep4d">Jeep Wrangler 4 Door</option>
+                            <option value="jeep2d">Jeep Wrangler 2 Door</option>
+                        </select>
+                        <br>
+                    </label>
+                    <label>
+                        Any Special Accommodations<br>
+                        <textarea name="description" id="description" cols="150" rows="10" required></textarea>
+                    </label>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <div class="line mediumline"></div>
     <footer>
@@ -59,5 +123,6 @@
     <script src="scripts/dates.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/navham.js"></script>
+    <script src="scripts/toggled.js"></script>
 </body>
 </html>

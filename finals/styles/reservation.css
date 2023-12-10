@@ -1,0 +1,100 @@
+main.resmain {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    transition: background-color 0.5s;
+}
+
+section.rules {
+    grid-column: 1/9;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+}
+
+.rules h2, .rules p {
+    text-align: center;
+}
+
+.rules h2 {
+    font-size: 27px;
+    font-family: var(--header);
+}
+
+.rules p {
+    font-size: var(--font-size);
+    font-family: var(--p);
+}
+
+.rules ul {
+    border-radius: 20px;
+    border: 1px solid linear-gradient(to top, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to top, var(--primary-color), var(--secondary-color));
+}
+
+section.rules ul li {
+    font-size: 20px;
+    font-family: var(--p);
+    list-style: none;
+    padding: 10px 25px 5px 0;
+}
+
+section.forms {
+    grid-column: 2/8;
+    margin: 20px 20px 0 20px;
+    justify-content: center;
+}
+
+section.forms h2 {
+    font-size: var(--font-size);
+    font-family: var(--header);
+}
+
+fieldset.personalinfo {
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--p);
+    background-color: var(--primary-color);
+}
+
+form {
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 0;
+    padding: 20px;
+    background: linear-gradient(to top, var(--secondary-color), var(--primary-color));
+}
+
+fieldset.rentalinfo {
+    border: none;
+    margin: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.rentalinfo label {
+    font-size: 20px;
+    font-family: var(--p);
+    margin-bottom: 10px;
+    display: block;
+}
+
+input, select, textarea#description {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+}
+
+label.pi input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 98%;
+}
+
+label.pi {
+    margin-bottom: 10px;
+    display: block;
+}
