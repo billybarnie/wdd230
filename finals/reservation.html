@@ -75,27 +75,35 @@
             <form action="thankyou.html" method="get">
                 <fieldset class="personalinfo">
                     <h2>Rent or Reserve Today!</h2>
-                    <label class="pi">* First Name: <input type="text" name="firstname" pattern="[A-Za-z]+" required><br></label>
-                    <label class="pi">Middle initial (optional) <input type="text" name="minitial" pattern="[A-Za-z]" maxlength="1" placeholder="Please Enter a Single Letter"><br></label>
-                    <label class="pi">* Last Name: <input type="text" name="lastname" pattern="[A-Za-z]+" required><br></label>
-                    <label class="pi">* Phone Number: <input type="tel" name="phone" placeholder="7774445555" pattern="[0-9]+" required><br></label>
-                    <label class="pi">* Email: <input type="email" name="email" placeholder="someone@gmail.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required><br></label>
-                    <label class="pi">* State or Country: <input type="text" name="state" pattern="[A-Za-z\\]*" required></label>
+                    <label class="pi">* First Name: <input type="text" id="fname" name="firstname" pattern="[A-Za-z]+" required><br></label>
+                    <p id="error-message"></p>
+                    <label class="pi">Middle initial (optional) <input type="text" id="mi" name="minitial" pattern="[A-Za-z]" maxlength="1" placeholder="Please Enter a Single Letter"><br></label>
+                    <label class="pi">* Last Name: <input type="text" id="lname" name="lastname" pattern="[A-Za-z]+" required><br></label>
+                    <p id="error-message1"></p>
+                    <label class="pi">* Phone Number: <input type="tel" id="num" name="phone" placeholder="7774445555" pattern="[0-9]+" required><br></label>
+                    <p id="phone"></p>
+                    <label class="pi">* Email: <input type="email" id="mail" name="email" placeholder="someone@gmail.com" required><br></label>
+                    <p id="valmail"></p>
+                    <label class="pi">* State or Country: <input type="text" id="" name="state" pattern="[A-Za-z//]*"></label>
                     <label class="pi">Cruise Line (optional) <input type="text"><br></label>
                 </fieldset>
-                    
                 <fieldset class="rentalinfo">
                     <label class="resdates">* Select Your Reservation Date: <br><input type="date" name="resdate" required><br></label>
                     <label>* Number of Rentals: <br><input type="text" name=""><br></label>
                     <label>* Time: <br>
                         <select name="time">
                             <option value="">Please Select</option>
-                            <option value="hday">Half Day(3 hours)</option>
-                            <option value="fday">Full Day(24 hours)</option>
+                            <option value="hday">Half Day (3 hours)</option>
+                            <option value="fday">Full Day (24 hours)</option>
+                            <option value="2day">Two Days</option>
+                            <option value="3day">Three Days</option>
+                            <option value="4day">Four Days</option>
+                            <option value="5day">Five Days</option>
+                            <option value="6day">Six Days</option>
+                            <option value="week">1 Week Max</option>
                         </select>
                         <br>
                     </label>
-                    
                     <label>* Rental Type: <br>
                         <select name="renttype">
                             <option value="" class="select">Please Select</option>
@@ -127,6 +135,6 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/navham.js"></script>
     <script src="scripts/toggled.js"></script>
-    <script src="scripts/validate.js"></script>
+    <script src="scripts/forms.js"></script>
 </body>
 </html>
