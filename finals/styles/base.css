@@ -333,3 +333,7 @@ footer p:not(:last-child) {
     color: var(--accent-color);
     font-weight: bold;
 }
+
+.bottom {
+    display: none;
+}
