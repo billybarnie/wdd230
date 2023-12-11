@@ -19,7 +19,11 @@ numorental.addEventListener("focusout", () => validateNumber(numorental, nrError
 function validateField(element, errorElement, errorMessage) {
     const value = element.value;
 
-    if (!/^[a-zA-Z]+$/.test(value) && !/[^a-zA-Z0-9]/.test(value)) {
+    if (value === '') {
+        showError(element, errorElement, "Please enter a response!");
+
+    } else if (!/^[a-zA-Z]+$/.test(value) && !/[^a-zA-Z0-9]/.test(value)) {
+
         showError(element, errorElement, errorMessage);
     } else {
         showSuccess(element, errorElement);
@@ -29,7 +33,11 @@ function validateField(element, errorElement, errorMessage) {
 function validatePhoneNumber(element, errorElement, errorMessage) {
     const value = element.value;
 
-    if (!/^[0-9]+$/.test(value) && !/^\d+$/.test(value)) {
+    if (value === '') {
+        showError(element, errorElement, "Please enter a response!");
+
+    } else if (!/^[0-9]+$/.test(value) && !/^\d+$/.test(value)) {
+
         showError(element, errorElement, errorMessage);
     } else {
         showSuccess(element, errorElement);
@@ -39,7 +47,11 @@ function validatePhoneNumber(element, errorElement, errorMessage) {
 function validateEmail(element, errorElement, errorMessage) {
     const value = element.value;
 
-    if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)) {
+    if (value === '') {
+        showError(element, errorElement, "Please enter a response!");
+
+    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)) {
+
         showError(element, errorElement, errorMessage);
     } else {
         showSuccess(element, errorElement);
@@ -49,7 +61,11 @@ function validateEmail(element, errorElement, errorMessage) {
 function validateNumber(element, errorElement, errorMessage) {
     const value = element.value;
 
-    if (!/^\d+$/.test(value)) {
+    if (value === '') {
+        showError(element, errorElement, "Please enter a response!");
+
+    } else if (!/^\d+$/.test(value)) {
+
         showError(element, errorElement, errorMessage);
     } else {
         showSuccess(element, errorElement);
