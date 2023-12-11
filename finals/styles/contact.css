@@ -132,7 +132,7 @@ textarea {
     background-color: var(--secondary-color);
 }
 
-@media screen and (min-width: 375px) and (max-width: 850px) {
+@media screen and (min-width: 300px) and (max-width: 850px) {
 
     main section.consumerinfo {
         grid-column: 1/8;

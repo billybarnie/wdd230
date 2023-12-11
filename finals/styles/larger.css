@@ -113,4 +113,21 @@
     section.forms {
         grid-column: 1/9;
     }
+
+    .rules ul li, p, label.pi, label, .consumerinfo label, .homemain p {
+        font-size: var(--mobile-font);
+    }
+
+    .rules p, a.contactlink, .homemain .rent a {
+        font-size: 20px;
+    }
+
+    .rules h2, .forms h2, h2, .consumerinfo legend, .maps h2, .homemain h2, .call a.renttoday, .open li a, .open li  {
+        font-size: 22px;
+    }
+
+    fieldset.personalinfo {
+        padding: 30px;
+    }
+
 }
