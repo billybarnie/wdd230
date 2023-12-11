@@ -301,12 +301,13 @@ footer p:not(:last-child) {
     text-align: center;
 }
 
-.appremain {
+.appremain, .thankmain {
     display: grid;
+    transition: background-color 0.5s;
     grid-template-columns: repeat(5, 1fr);
 }
 
-.appremain section {
+.appremain section, .thankmain section {
     margin-top: 10em;
     margin-bottom: 15em;
     text-align: center;
@@ -317,12 +318,13 @@ footer p:not(:last-child) {
     border: 1px solid var(--primary-color);
 }
 
-.appremain section h1 {
+.appremain section h1, .thankmain section h1 {
     font-size: var(--font-size);
     font-family: var(--header);
 }
 
-.appremain section p {
+.appremain section p, .thankmain section p {
+    padding: 20px;
     font-size: 20px;
     font-family: var(--p);
 }
