@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         rentalImage.src = rental.imageURL;
         rentalImage.alt = rental['Rental Type'];
         rentalImage.width = 100;
+        rentalImage.loading = 'eager';
         imageCell.appendChild(rentalImage);
         row.appendChild(imageCell);
 

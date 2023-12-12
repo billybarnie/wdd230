@@ -23,24 +23,24 @@
 <body>
     <header>
         <picture>
-            <img class="logo" src="images/scoots_rental.png" alt="scoots logo">
+            <img class="logo" src="images/scoots_rental.webp" alt="scoots logo">
         </picture>
     </header>
     <ul class="call">
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="images/insta_logo.png" alt="Instagram logo"></a></li>
-        <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fb_logo.png" alt="Facebook logo"></a></li>
-        <li><a href="https://www.tiktok.com/en/" target="_blank"><img src="images/tiktok.png" alt="Tiktok logo"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><img src="images/insta_logo.webp" alt="Instagram logo"></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><img src="images/fb_logo.webp" alt="Facebook logo"></a></li>
+        <li><a href="https://www.tiktok.com/en/" target="_blank" aria-label="Tiktok"><img src="images/tiktok.webp" alt="Tiktok logo"></a></li>
         <li><a href="reservation.html" class="renttoday">Rent Today!</a></li>
     </ul>
     <div class="divswitch">
-        <label class="switch">
+        <label class="switch" aria-label="Switch">
             <input type="checkbox">
             <span class="slider round"></span>
         </label>
     </div>
     <div class="line"></div>
     <nav>
-        <button id="menu"></button>
+        <button id="menu" aria-label="navigation menu"></button>
         <ul class="navigate">
             <li><a href="index.html">Home</a></li>
             <li><a href="rental.html">Rentals</a></li>
@@ -74,8 +74,9 @@
         </section>
         <section class="forms">
             <form action="thankyou.html" method="get">
+                <h1>Rent or Reserve Today!</h1>
                 <fieldset class="personalinfo">
-                    <h2>Rent or Reserve Today!</h2>
+                    <legend class="legend1">Personal Information</legend>
                     <label class="pi">* First Name: <input type="text" id="fname" name="firstname" pattern="[A-Za-z]+" required><br></label>
                     <p id="error-message"></p>
                     <label class="pi">Middle initial (optional) <input type="text" id="mi" name="minitial" pattern="[A-Za-z]" maxlength="1" placeholder="Please Enter a Single Letter"><br></label>
@@ -89,6 +90,7 @@
                     <label class="pi">Cruise Line (optional) <input type="text"><br></label>
                 </fieldset>
                 <fieldset class="rentalinfo">
+                    <legend class="legend2">Select Your Reservation Details</legend>
                     <label class="resdates">* Select Your Reservation Date: <br><input type="date" name="resdate" required><br></label>
                     <label>* Number of Rentals: <br><input type="text" id="numorental" name="numorent" required><br></label>
                     <label>* Time: <br>
@@ -128,9 +130,9 @@
     </main>
     <div class="line mediumline"></div>
     <ul class="bottom">
-        <li><a href="https://www.instagram.com/" target="_blank"><img src="images/insta_logo.png" alt="Instagram logo"></a></li>
-        <li><a href="https://www.facebook.com/" target="_blank"><img src="images/fb_logo.png" alt="Facebook logo"></a></li>
-        <li><a href="https://www.tiktok.com/en/" target="_blank"><img src="images/tiktok.png" alt="Tiktok logo"></a></li>
+        <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><img src="images/insta_logo.webp" alt="Instagram logo"></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><img src="images/fb_logo.webp" alt="Facebook logo"></a></li>
+        <li><a href="https://www.tiktok.com/en/" target="_blank" aria-label="Tiktok"><img src="images/tiktok.webp" alt="Tiktok logo"></a></li>
     </ul>
     <div class="line mediumline"></div>
     <footer>

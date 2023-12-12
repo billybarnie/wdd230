@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (link.href === currentPage) {
 
             link.classList.add("current-page");
+            link.style.color = "white";
         }
     });
 });

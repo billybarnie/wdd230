@@ -126,6 +126,10 @@ textarea {
     box-sizing: border-box;
 }
 
+h2, p, legend, label {
+    color: black;
+}
+
 .submitBtn {
     font-size: 20px;
     font-family: var(--header);

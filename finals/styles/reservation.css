@@ -115,3 +115,21 @@ input.submit {
     border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
 }
+
+legend {
+    padding: 15px;
+    font-size: 25px;
+    font-family: var(--header);
+}
+
+legend.legend1 {
+    text-align: left;
+}
+
+p, h1, h2, label, legend, li {
+    color: black;
+}
+
+h1 {
+    font-family: var(--header);
+}

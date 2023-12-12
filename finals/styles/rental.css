@@ -104,4 +104,8 @@ th {
     #maindiv {
         display: block;
     }
+
+    img {
+        max-width: 800px;
+    }
 }

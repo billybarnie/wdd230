@@ -64,4 +64,9 @@
         margin-top: -6px;
         width: 50px;
     }
+
+    .rental section img {
+        max-width: 600px;
+        height: auto;
+    }
 }

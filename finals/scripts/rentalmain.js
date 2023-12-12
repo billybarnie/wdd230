@@ -13,6 +13,8 @@ fetch('data/rentalprices.json')
 
         image.src = rental.imageURL;
         image.alt = rental['Rental Type'];
+        image.width = 100;
+        image.loading = 'eager';
 
         for (const key in rental) {
             if (key !== 'imageURL') {

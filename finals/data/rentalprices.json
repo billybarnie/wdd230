@@ -1,7 +1,7 @@
 {
     "rentals": [
       {
-        "imageURL" : "images/honda_metro_scooter.jpeg",
+        "imageURL" : "images/honda_metro_scooter.webp",
         "Rental Type": "~Honda Metro Scooter",
         "Max. Persons": 1,
         "Reservation - Half Day": "$20",
@@ -46,7 +46,7 @@
         "Walk-In - Full Day": "$125"
       },
       {
-        "imageURL" : "images/jeep_wrangler_2_door.avif",
+        "imageURL" : "images/jeep_wrangler_2_door.webp",
         "Rental Type": "~Jeep Wrangler - 2 door",
         "Max. Persons": 4,
         "Reservation - Half Day": "$60",

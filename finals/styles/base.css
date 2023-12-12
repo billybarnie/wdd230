@@ -52,7 +52,7 @@ header .logo img {
     border-radius: 5px;
     padding: 5px 10px;
     font-family: var(--header);
-    color: var(--accent-color);
+    color: var(--accent-color-1);
     font-size: var(--font-size);
     background-color: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -150,8 +150,8 @@ input:checked+.slider:before {
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    border: 1px solid var(--secondary-color);
-    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
