@@ -2,6 +2,32 @@ const apiKey = '57e8a0d56447b6d63f2e95f0a11177e2';
 const latitude = 20.500682;
 const longitude = -86.951317;
 
+async function fetchForecast() {
+
+  const forecastResponse = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`);
+  const forecastData = await forecastResponse.json();
+
+  displayMaxTemperatureForCurrentDay(forecastData);
+}
+
+function displayMaxTemperatureForCurrentDay(forecastData) {
+  const currentDate = new Date();
+  const currentDay = currentDate.getDate();
+  let maxTemperature = Number.MIN_SAFE_INTEGER;
+
+  forecastData.list.forEach((day) => {
+    const itemDate = new Date(day.dt * 1000);
+    if (itemDate.getDate() === currentDay && day.main.temp > maxTemperature) {
+      maxTemperature = day.main.temp;
+    }
+  });
+
+  const maxTempElement = document.getElementById('maxTemperature');
+  maxTempElement.textContent = `Max Temp Today: ${Math.round(maxTemperature)} °F`;
+}
+
+fetchForecast();
+
 async function fetchWeather() {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
 
