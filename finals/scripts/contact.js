@@ -1,42 +1,22 @@
 const fName = document.getElementById('fname');
 const lName = document.getElementById('lname');
-const num = document.getElementById('num');
 const mail = document.getElementById('mail');
-const numorental = document.getElementById('numorental');
 
 const fnError = document.querySelector("#error-message");
 const lnError = document.querySelector("#error-message1");
-const nError = document.querySelector("#phone");
 const mError = document.querySelector("#valmail");
-const nrError = document.querySelector("#numorental-error");
 
 fName.addEventListener("blur", () => validateField(fName, fnError, "Please enter your name without numbers or symbols!"));
 lName.addEventListener("blur", () => validateField(lName, lnError, "Please enter your name without numbers or symbols!"));
-num.addEventListener("blur", () => validatePhoneNumber(num, nError, "Please enter a valid number without letters!"));
 mail.addEventListener("blur", () => validateEmail(mail, mError, "Enter a valid email address!"));
-numorental.addEventListener("blur", () => validateNumber(numorental, nrError, "Please enter a valid number of rentals!"));
 
 function validateField(element, errorElement, errorMessage) {
     const value = element.value;
 
     if (value === '') {
-        showError(element, errorElement, "Please enter a response or refresh page!");
+        showError(element, errorElement, "Please enter a response!");
 
     } else if (!/^[a-zA-Z]+$/.test(value) && !/[^a-zA-Z0-9]/.test(value)) {
-
-        showError(element, errorElement, errorMessage);
-    } else {
-        showSuccess(element, errorElement);
-    }
-}
-
-function validatePhoneNumber(element, errorElement, errorMessage) {
-    const value = element.value;
-
-    if (value === '') {
-        showError(element, errorElement, "Please enter a response or refresh page!");
-
-    } else if (!/^[0-9]+$/.test(value) && !/^\d+$/.test(value)) {
 
         showError(element, errorElement, errorMessage);
     } else {
@@ -48,23 +28,9 @@ function validateEmail(element, errorElement, errorMessage) {
     const value = element.value;
 
     if (value === '') {
-        showError(element, errorElement, "Please enter a response or refresh page!");
+        showError(element, errorElement, "Please enter a response!");
 
     } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(value)) {
-
-        showError(element, errorElement, errorMessage);
-    } else {
-        showSuccess(element, errorElement);
-    }
-}
-
-function validateNumber(element, errorElement, errorMessage) {
-    const value = element.value;
-
-    if (value === '') {
-        showError(element, errorElement, "Please enter a response or refresh page!");
-
-    } else if (!/^\d+$/.test(value)) {
 
         showError(element, errorElement, errorMessage);
     } else {

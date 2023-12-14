@@ -13,7 +13,6 @@ fetch('data/rentalprices.json')
 
         image.src = rental.imageURL;
         image.alt = rental['Rental Type'];
-        image.width = 100;
         image.loading = 'eager';
         image.media = "none";
 
