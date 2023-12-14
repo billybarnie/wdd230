@@ -47,6 +47,9 @@
         </ul>
     </nav>
     <div class="line navline"></div>
+    <div class="banner" id="maxTempBanner" style="display: none;">
+        <p id="maxTempMessage"></p><button onclick="closeMaxTempBanner()" id="weatherbutton">❌</button>
+    </div>
     <picture>
         <source srcset="images/hero_image_small.webp" media="(max-width: 500px)">
         <source srcset="images/hero_image_medium.webp" media="(max-width: 1000px)">
@@ -66,7 +69,6 @@
         <section class="weather">
             <h2>Current Weather</h2>
             <p id="currentWeather"></p>
-            <p id="maxTemperature"></p>
             <figure>
                 <figcaption></figcaption>
             </figure>

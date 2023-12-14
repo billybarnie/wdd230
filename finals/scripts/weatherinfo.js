@@ -22,8 +22,20 @@ function displayMaxTemperatureForCurrentDay(forecastData) {
     }
   });
 
-  const maxTempElement = document.getElementById('maxTemperature');
-  maxTempElement.textContent = `Max Temp Today: ${Math.round(maxTemperature)} °F`;
+  const maxTempMessage = document.getElementById('maxTempMessage');
+  maxTempMessage.textContent = `Max Temperature Today: ${Math.round(maxTemperature)} °F`;
+
+  showMaxTempBanner();
+}
+
+function showMaxTempBanner() {
+  const maxTempBanner = document.getElementById('maxTempBanner');
+  maxTempBanner.style.display = 'block';
+}
+
+function closeMaxTempBanner() {
+  const maxTempBanner = document.getElementById('maxTempBanner');
+  maxTempBanner.style.display = 'none';
 }
 
 fetchForecast();

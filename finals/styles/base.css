@@ -7,6 +7,7 @@
     --header: 'Manrope', sans-serif;
     --p: 'Heebo', sans-serif;
     --toggle-back: #82644d;
+    --banner-color: rgb(218, 255, 163);
 }
 
 header {
@@ -336,4 +337,21 @@ footer p:not(:last-child) {
 
 .bottom {
     display: none;
+}
+
+div#maxTempBanner.banner {
+    background-color: var(--banner-color);
+    padding: 5px;
+}
+
+#weatherbutton {
+    float: right;
+    border: none;
+    margin-top: -35px;
+    margin-right: 10px;
+    background-color: var(--banner-color);
+}
+
+p#maxTempMessage {
+    text-align: center;
 }

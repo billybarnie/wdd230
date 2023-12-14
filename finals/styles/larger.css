@@ -157,4 +157,9 @@
     .rental section img {
         max-width: 500px;
     }
+
+    #weatherbutton {
+        margin-top: -40px;
+        margin-right: 2px;
+    }
 }
